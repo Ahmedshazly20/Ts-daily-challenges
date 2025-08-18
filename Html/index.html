@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Shazly - Professional CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+    }
+    .cv-container {
+      background-color: #ffffff;
+      max-width: 1400px;
+      padding: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border-radius: 0.5rem;
+      margin: 2rem auto;
+    }
+    .section-title {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .contact-info a {
+      color: #4b5563;
+      transition: color 0.2s ease-in-out;
+    }
+    .contact-info a:hover {
+      color: #1f2937;
+    }
+    @media print {
+      body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body dir="ltr">
+
+<div class=" cv-container">
+  <header class="text-center mb-10">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Ahmed Shazly Ahmed</h1>
+    <h2 class="text-xl text-gray-600 font-semibold">Front-End Developer</h2>
+  </header>
+
+  <section class="contact-info grid grid-cols-1 md:grid-cols-2 gap-2 text-center md:text-left mb-8 text-gray-600">
+    <div class="flex items-center justify-center md:justify-start">
+      <p class="mr-2">Giza, Egypt</p>
+    </div>
+    <div class="flex flex-col items-center md:items-start">
+      <a href="mailto:ahmed.shazly2019@gmail.com" class="flex items-center mb-1">
+        <span class="mr-2">&#9993;</span> ahmed.shazly2019@gmail.com
+      </a>
+      <p class="flex items-center mb-1">
+        <span class="mr-2">&#9742;</span> +201001619103
+      </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start">
+      <a href="http://linkedin.com/in/ahmedshazly20" target="_blank" class="flex items-center mb-1 text-gray-600">
+        <span class="mr-2">&#128279;</span> linkedin.com/in/ahmedshazly20
+      </a>
+      <a href="https://ahmed-shazly.vercel.app/" target="_blank" class="flex items-center mb-1">
+        <span class="mr-2">&#128279;</span> My-Portfolio 
+      </a>
+    </div>
+    <div class="flex items-center justify-center md:justify-start">
+      <a href="http://github.com/Ahmedshazly20" target="_blank" class="flex items-center">
+        <span class="mr-2">&#128279;</span> github.com/Ahmedshazly20
+      </a>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Professional Summary</h3>
+    <p class="text-gray-700 leading-relaxed">
+      Results-driven Front-End Developer with extensive experience in building scalable, high-performance web applications using <strong class="text-gray-900">React.js, Next.js, and TypeScript</strong>. Specialized in creating pixel-perfect UIs and optimizing application performance through efficient API integration (GraphQL, REST) and state management. Proven ability to lead development projects, reducing delivery times by up to 40% and enhancing user experience by leveraging modern tools and best practices.
+    </p>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Skills</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4">
+      <div>
+        <h4 class="font-bold text-gray-800">Frontend:</h4>
+        <p class="text-gray-700">HTML, CSS, JavaScript (ES6+), TypeScript, React.js, Next.js, Redux Toolkit, React Query</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-gray-800">Styling & UI:</h4>
+        <p class="text-gray-700">Tailwind CSS, Material UI (MUI), Styled-Components</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-gray-800">Backend & CMS:</h4>
+        <p class="text-gray-700">Node.js, Strapi, Firebase</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-gray-800">APIs & Tools:</h4>
+        <p class="text-gray-700">GraphQL, REST, Axios, Postman, Git, GitHub, NPM</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-gray-800">Performance:</h4>
+        <p class="text-gray-700">Google Lighthouse, Bundle Size Optimization, Code Splitting</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Work Experience</h3>
+    <div class="mb-6">
+      <h4 class="text-lg font-bold text-gray-800">Freelance Developer</h4>
+      <p class="text-sm text-gray-600 mb-2">Remote | 10/2023 – Present</p>
+      <ul class="list-disc ml-6 text-gray-700 leading-relaxed">
+        <li>Delivered 6+ full-stack projects for E-commerce and Real Estate clients using <strong class="text-gray-900">Tailwind CSS</strong> and <strong class="text-gray-900">Strapi</strong>.</li>
+        <li>Engineered custom CMS dashboards and shopping cart logic to meet specific client requirements.</li>
+        <li>Integrated <strong class="text-gray-900">Stripe</strong> payment gateways, reducing project delivery time by 40% through streamlined and secure payment processing solutions.</li>
+      </ul>
+    </div>
+    <div class="mb-6">
+      <h4 class="text-lg font-bold text-gray-800">Front-End Developer</h4>
+      <p class="text-sm text-gray-600 mb-2">Emirates Hotels Group | 05/2023 – 08/2023</p>
+      <ul class="list-disc ml-6 text-gray-700 leading-relaxed">
+        <li>Architected and developed a comprehensive 14-page administrative dashboard using <strong class="text-gray-900">Redux Toolkit</strong> to manage complex application state, enabling centralized control over bookings, customer data, and occupancy reports.</li>
+        <li>Improved application responsiveness by decreasing API latency by 15% through the implementation of effective caching strategies with <strong class="text-gray-900">React Query</strong>, resulting in instant data loads and a smoother user experience.</li>
+        <li>Delivered the complete front-end solution in collaboration with a backend engineer, ensuring seamless integration and functionality.</li>
+      </ul>
+    </div>
+    <div class="mb-6">
+      <h4 class="text-lg font-bold text-gray-800">Front-End Developer</h4>
+      <p class="text-sm text-gray-600 mb-2">UAE ERP System | 11/2022 – 04/2023</p>
+      <ul class="list-disc ml-6 text-gray-700 leading-relaxed">
+        <li>Enhanced the performance of a SaaS ERP system by 25%, as measured by <strong class="text-gray-900">Google Lighthouse</strong>, by optimizing <strong class="text-gray-900">React/TypeScript</strong> components and implementing efficient rendering strategies.</li>
+        <li>Reduced the final bundle size by 20% by optimizing reusable <strong class="text-gray-900">Material UI</strong> components and applying tree-shaking techniques, leading to significantly faster initial application load times.</li>
+        <li>Independently integrated over 10 <strong class="text-gray-900">GraphQL</strong> endpoints after a single week of self-learning, enabling complex data-fetching capabilities for core ERP modules.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Key Projects</h3>
+    <div class="mb-4">
+      <h4 class="text-lg font-bold text-gray-800">E-commerce Platform</h4>
+      <p class="text-sm text-gray-600 mb-1">2024</p>
+      <p class="text-gray-700 leading-relaxed">Engineered a high-performance e-commerce solution using <strong class="text-gray-900">React.js, Stripe, and Tailwind</strong>, which achieved a <strong class="text-gray-900">25% faster checkout process</strong> and reduced development time by 40% by leveraging a hosted payment page and modern tooling.</p>
+    </div>
+    <div>
+      <h4 class="text-lg font-bold text-gray-800">Real Estate CMS</h4>
+      <p class="text-sm text-gray-600 mb-1">2024</p>
+      <p class="text-gray-700 leading-relaxed">Built a full-stack solution with <strong class="text-gray-900">React, Strapi, and Redux Toolkit</strong>, creating a dynamic platform with over 10 pages fully manageable from a custom-built Content Management System (CMS).</p>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Education</h3>
+    <p class="text-gray-700 leading-relaxed"><strong>Bachelor of Commerce</strong> | Aswan University | 2018 – 2022</p>
+  </section>
+
+  <section class="mb-8">
+    <h3 class="text-xl section-title">Certifications</h3>
+    <p class="text-gray-700 leading-relaxed">
+      React.js + Redux | Udacity <br>
+      Node.js + Firebase | Udemy
+    </p>
+  </section>
+
+  <section>
+    <h3 class="text-xl section-title">Languages</h3>
+    <p class="text-gray-700 leading-relaxed">
+      <strong>Arabic:</strong> Native<br>
+      <strong>English:</strong> Professional
+    </p>
+  </section>
+</div>
+
+</body>
+</html>
