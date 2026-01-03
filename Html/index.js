@@ -1,26 +1,19 @@
-function first() {
-    console.log('First function');
-    second();
-    console.log('First function end');
+function createCounter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        return count;
+    };
 }
 
-function second() {
-    console.log('Second function');
-    third();
-    console.log('Second function end');
-}
+const counter1 = createCounter();
+const counter2 = createCounter();
 
-function third() {
-    console.log('Third function');
-}
+console.log(counter1()); // 1
+console.log(counter1()); // 2
+console.log(counter2()); // 1
+console.log(counter1()); // 3
 
-first();
-
-// Call stack progression:
-// 1. Global context
-// 2. Global -> first()
-// 3. Global -> first() -> second()
-// 4. Global -> first() -> second() -> third()
-// 5. Global -> first() -> second() (third() popped)
-// 6. Global -> first() (second() popped)
-// 7. Global (first() popped)
+// Each counter maintains its own execution context
+// with its own 'count' variable
