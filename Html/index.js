@@ -1,19 +1,12 @@
-function createCounter() {
-    let count = 0;
 
-    return function () {
-        count++;
-        return count;
-    };
+
+function even_or_odd(num) {
+    if (num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+
 }
 
-const counter1 = createCounter();
-const counter2 = createCounter();
-
-console.log(counter1()); // 1
-console.log(counter1()); // 2
-console.log(counter2()); // 1
-console.log(counter1()); // 3
-
-// Each counter maintains its own execution context
-// with its own 'count' variable
+console.log(even_or_odd(8)); // Output: "Odd"
