@@ -1,14 +1,15 @@
-function greet() {
-    console.log("Hello!");
+function createCounter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        return count;
+    };
 }
 
-function sayName(name) {
-    console.log("My name is " + name);
-    greet();  // استدعاء دالة greet
-}
+const counter1 = createCounter();
 
-function introduce() {
-    sayName("Alice");  // استدعاء دالة sayName
-}
+console.log(counter1()); // 1
+console.log(counter1()); // 2
+console.log(counter1()); // 3
 
-introduce();  // استدعاء الدالة الرئيسية
