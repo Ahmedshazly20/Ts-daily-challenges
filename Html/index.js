@@ -1,15 +1,7 @@
-function createCounter() {
-    let count = 0;
+console.log("Start");
 
-    return function () {
-        count++;
-        return count;
-    };
-}
+setTimeout(() => console.log("Timeout"), 0);
 
-const counter1 = createCounter();
+Promise.resolve().then(() => console.log("Promise"));
 
-console.log(counter1()); // 1
-console.log(counter1()); // 2
-console.log(counter1()); // 3
-
+console.log("End");
