@@ -1,8 +1,9 @@
-function greet() {
-    console.log(this.name);
-}
+const Counter = (function () {
+    let count = 0;
 
-const user = { name: "Ahmed" };
+    function increment() { count++; }
+    function decrement() { count--; }
+    function getCount() { return count; }
 
-const boundGreet = greet.bind(user);
-boundGreet();
+    return { increment, getCount }; // decrement is private
+})();
